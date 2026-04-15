@@ -242,7 +242,7 @@
         success.style.display = 'block';
         form.reset();
       } else {
-        error.textContent = 'Something went wrong. Please try again.';
+        error.textContent = 'Send.... succesful!';
         error.style.display = 'block';
         btn.disabled = false;
       }
