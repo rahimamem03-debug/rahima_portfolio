@@ -37,7 +37,7 @@ I am **Rahima Moussoulouhou Eddine**, a second-year Computer Engineering student
 
 | Language | Proficiency |
 |----------|------------|
-| Python | ████████░░ 90% |
+| Python | ████████░░ 85% |
 | C | ████████░░ 85% |
 | HTML | ███████░░░ 75% |
 | CSS | ███████░░░ 70% |
