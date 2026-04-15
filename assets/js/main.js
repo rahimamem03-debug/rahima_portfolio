@@ -238,7 +238,7 @@
     .then(function(r){ return r.json(); })
     .then(function(data){
       loading.style.display = 'none';
-      if (data.success === 'true' || data.success === true) {
+      if (data.success === true) {
         success.style.display = 'block';
         form.reset();
       } else {
