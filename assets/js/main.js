@@ -217,41 +217,41 @@
 //     }
 
   // Script du contact
-  // document.getElementById('contactForm').addEventListener('submit', function(e) {
-  //   e.preventDefault();
-  //   var form    = this;
-  //   var btn     = document.getElementById('formBtn');
-  //   var loading = document.getElementById('formLoading');
-  //   var success = document.getElementById('formSuccess');
-  //   var error   = document.getElementById('formError');
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var form    = this;
+    var btn     = document.getElementById('formBtn');
+    var loading = document.getElementById('formLoading');
+    var success = document.getElementById('formSuccess');
+    var error   = document.getElementById('formError');
 
-  //   success.style.display = 'none';
-  //   error.style.display   = 'none';
-  //   loading.style.display = 'block';
-  //   btn.disabled = true;
+    success.style.display = 'none';
+    error.style.display   = 'none';
+    loading.style.display = 'block';
+    btn.disabled = true;
 
-  //   fetch(form.action, {
-  //     method: 'POST',
-  //     body: new FormData(form),
-  //     headers: { 'Accept': 'application/json' }
-  //   })
-  //   .then(function(r){ return r.json(); })
-  //   .then(function(data){
-  //     loading.style.display = 'none';
-  //     if (data.success === true) {
-  //       success.style.display = 'block';
-  //       form.reset();
-  //     } else {
-  //       error.textContent = 'Something went wrong. Please try again.';
-  //       error.style.display = 'block';
-  //       btn.disabled = false;
-  //     }
-  //   })
-  //   .catch(function(){
-  //     loading.style.display = 'none';
-  //     error.textContent = 'Network error. Please check your connection and try again.';
-  //     error.style.display = 'block';
-  //     btn.disabled = false;
-  //   });
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      loading.style.display = 'none';
+      if (data.success === true) {
+        success.style.display = 'block';
+        form.reset();
+      } else {
+        error.textContent = 'Something went wrong. Please try again.';
+        error.style.display = 'block';
+        btn.disabled = false;
+      }
+    })
+    .catch(function(){
+      loading.style.display = 'none';
+      error.textContent = 'Network error. Please check your connection and try again.';
+      error.style.display = 'block';
+      btn.disabled = false;
+    });
   });
 
